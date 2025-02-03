@@ -1,0 +1,18 @@
+﻿@model Hospital
+<h1>Update hospital</h1>
+
+<form method="post">
+	<label>Id Hospital</label>
+	<input type="hidden" name="idhospital" value="@Model.IdHospital" />
+	<label>Nombre: </label>
+	<input type="text" name="nombre" value="@Model.Nombre" />
+	<label>Direccion</label>
+	<input type="text" name="direccion" value="@Model.Direccion" />
+	<label>Telefono</label>
+	<input type="text" name="telefono" value="@Model.Telefono"/>
+	<label>Camas</label>
+	<input type="text" name="camas" value="@Model.Camas"/>
+	<button>Update</button>
+</form>
+
+<h2>@ViewData["MENSAJE"]</h2>
